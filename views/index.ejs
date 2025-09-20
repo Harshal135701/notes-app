@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Change made: Updated title to Notes App -->
+    <title>My Notes App 📝</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-zinc-900 text-white">
+
+    <!-- Change made: Added main header -->
+    <header class="text-center py-8 bg-zinc-800 shadow-md">
+        <h1 class="text-4xl font-bold text-yellow-400 tracking-wide">My Notes App</h1>
+        <p class="text-zinc-300 mt-2">Keep your tasks organized and never forget anything!</p>
+    </header>
+
+    <div class="main w-full min-h-screen flex flex-col items-center p-6">
+
+        <!-- Change made: Form container with shadow and better spacing -->
+        <div class="form w-full max-w-xl p-6 bg-zinc-800 rounded-xl shadow-lg mt-6">
+            <form action="/create" method="post" class="flex flex-col gap-4">
+                <input class="block w-full rounded-md outline-none ps-5 py-2 bg-zinc-700 placeholder-zinc-400 text-white" 
+                       type="text" placeholder="Title goes here" name="title" required>
+                <textarea class="block w-full rounded-md outline-none ps-5 py-2 resize-none bg-zinc-700 placeholder-zinc-400 text-white" 
+                          placeholder="Write the task details here" name="details" rows="4" required></textarea>
+                <input class="mt-2 bg-yellow-500 hover:bg-yellow-400 transition-colors text-black font-semibold px-5 py-2 rounded-md cursor-pointer" 
+                       type="submit" value="Create Task">
+            </form>
+        </div>
+
+        <!-- Change made: Tasks grid -->
+        <div class="tasks w-full max-w-6xl mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+            <% if(files.length > 0){ %>
+                <% files.forEach(function(val){ %>
+                    <!-- Change made: Task card styling -->
+                    <div class="task bg-zinc-800 rounded-xl p-5 shadow-md flex flex-col justify-between">
+                        <!-- Change made: Show filename as title -->
+                        <h1 class="text-white text-2xl font-semibold tracking-tight mb-2"><%= val.split('.txt')[0] %></h1>
+                        <div class="flex justify-between items-center mt-4">
+                            <a class="text-blue-400 hover:underline" href="/file/<%= val %>">Read</a>
+                            <a class="text-yellow-400 hover:underline" href="/edit/<%= val %>">Edit</a>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <!-- Change made: No tasks message -->
+                <h3 class="text-zinc-400 text-center col-span-full">No tasks yet. Add your first note above!</h3>
+            <% } %>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

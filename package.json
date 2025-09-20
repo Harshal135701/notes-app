@@ -1,0 +1,16 @@
+{
+  "name": "notepadusingejs",
+  "version": "1.0.0",
+  "description": "A simple notes app using Node.js, Express.js, and EJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"   
+  },
+  "keywords": ["notes", "express", "ejs", "nodejs"],
+  "author": "Your Name",    
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
