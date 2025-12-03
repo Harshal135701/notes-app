@@ -2,7 +2,7 @@
 
 [🌐 **Live Demo**](https://notes-app-t7cg.onrender.com)
 
-![App Screenshot](assets/your-screenshot-file.png)
+![App Screenshot](Assets/screenshot.png)
 
 A modern, sleek **Notes Web App** built with **Node.js, Express, EJS, and Tailwind CSS**.  
 Create, read, and edit notes easily with a beautiful and responsive UI.
@@ -33,7 +33,7 @@ Create, read, and edit notes easily with a beautiful and responsive UI.
 ## Screenshot
 
 
-![App Screenshot](assets/your-screenshot-file.png)
+![App Screenshot](Assets/screenshot.png)
 ---
 
 ## Folder structure 
