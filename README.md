@@ -1,9 +1,8 @@
 # 💡 My Cool Notes App
 
-[🌐 **Live Demo**](https://your-username.github.io/your-repo/)  
+[🌐 **Live Demo**](https://notes-app-t7cg.onrender.com)  
 
  
-*(Replace with your screenshot or GIF file name)*
 
 A modern, sleek **Notes Web App** built with **Node.js, Express, EJS, and Tailwind CSS**.  
 Create, read, and edit notes easily with a beautiful UI.  
