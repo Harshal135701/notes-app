@@ -2,7 +2,7 @@
 
 [🌐 **Live Demo**](https://notes-app-t7cg.onrender.com)
 
-![Notes App Screenshot](3982d8ae-79cc-4dc6-90c3-98d57d2eaa1c.png)
+![Notes App Screenshot](screenshot.png)
 
 A modern, sleek **Notes Web App** built with **Node.js, Express, EJS, and Tailwind CSS**.  
 Create, read, and edit notes easily with a beautiful and responsive UI.
@@ -32,19 +32,19 @@ Create, read, and edit notes easily with a beautiful and responsive UI.
 
 ## Screenshot
 
-![App Screenshot](3982d8ae-79cc-4dc6-90c3-98d57d2eaa1c.png)
+![App Screenshot](screenshot.png)
 
 ---
 
 ## Folder structure 
-notes-app/
-│
-├─ files/           # Directory where notes are stored
-├─ views/           # EJS templates (index, task, edit pages)
-├─ public/          # Optional static files (CSS, images)
-├─ index.js         # Main server file
-├─ package.json     # Node.js dependencies & scripts
-└─ README.md        # Project documentation
+notes-app -> 
+
+├─ files/          
+├─ views/          
+├─ public/         
+├─ index.js        
+├─ package.json    
+└─ README.md        
 
 
 
