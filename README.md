@@ -1,41 +1,57 @@
 # 💡 My Cool Notes App
 
-[🌐 **Live Demo**](https://notes-app-t7cg.onrender.com)  
+[🌐 **Live Demo**](https://notes-app-t7cg.onrender.com)
 
-
+![Notes App Screenshot](3982d8ae-79cc-4dc6-90c3-98d57d2eaa1c.png)
 
 A modern, sleek **Notes Web App** built with **Node.js, Express, EJS, and Tailwind CSS**.  
-Create, read, and edit notes easily with a beautiful UI.  
+Create, read, and edit notes easily with a beautiful and responsive UI.
 
 ---
 
 ## Features
 
-- Create new notes
-- Read notes with a “Read More” page
-- Edit existing notes
+- Create new notes with a title and content
+- Read notes with a dedicated “Read More” page
+- Edit existing notes directly
 - Stylish and modern UI with Tailwind CSS
-- Responsive design
+- Responsive design — works on desktop and mobile
+- Notes stored locally using Node.js file system
 
 ---
 
 ## Tech Stack
 
-- Node.js
-- Express.js
-- EJS (Embedded JavaScript templates)
-- Tailwind CSS
-- File system for storing notes
+- **Node.js** – JavaScript runtime for backend
+- **Express.js** – Web framework for handling routes
+- **EJS** – Embedded JavaScript templates for dynamic HTML
+- **Tailwind CSS** – Modern and responsive styling
+- **File System** – For storing notes as `.txt` files
 
 ---
 
+## Screenshot
+
+![App Screenshot](3982d8ae-79cc-4dc6-90c3-98d57d2eaa1c.png)
+
+---
+
+## Folder structure 
+notes-app/
+│
+├─ files/           # Directory where notes are stored
+├─ views/           # EJS templates (index, task, edit pages)
+├─ public/          # Optional static files (CSS, images)
+├─ index.js         # Main server file
+├─ package.json     # Node.js dependencies & scripts
+└─ README.md        # Project documentation
+
+
+
 ## How to Run Locally
 
-Clone it :
-git clone <your-repo-url>
+1. **Clone the repo**
+```bash
+git clone https://github.com/Harshal135701/notes-app.git
+cd notes-app
 
-Install dependencies:
-npm install
-
-Start the app:
-node index.js
