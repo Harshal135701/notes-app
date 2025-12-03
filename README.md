@@ -2,7 +2,7 @@
 
 [🌐 **Live Demo**](https://notes-app-t7cg.onrender.com)  
 
- 
+
 
 A modern, sleek **Notes Web App** built with **Node.js, Express, EJS, and Tailwind CSS**.  
 Create, read, and edit notes easily with a beautiful UI.  
@@ -31,12 +31,11 @@ Create, read, and edit notes easily with a beautiful UI.
 
 ## How to Run Locally
 
-1. Clone the repository:
-```bash
+Clone it :
 git clone <your-repo-url>
 
-2. Install dependencies:
+Install dependencies:
 npm install
 
-3. Start the app:
+Start the app:
 node index.js
