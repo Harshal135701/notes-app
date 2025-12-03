@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title.replace('.txt','') %> - My Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-900 via-pink-900 to-gray-900 text-gray-100 font-sans min-h-screen flex items-center justify-center p-6">
+
+  <div class="w-full max-w-3xl bg-gray-800 rounded-2xl shadow-2xl p-8">
+
+    <!-- Note Title -->
+    <h1 class="text-3xl font-extrabold mb-6 text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+      <%= title.replace('.txt','') %>
+    </h1>
+
+    <!-- Note Content -->
+    <div class="bg-gray-700 p-6 rounded-xl shadow-inner whitespace-pre-wrap text-gray-100 text-lg leading-relaxed">
+      <%= content %>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-between mt-6">
+      <!-- Back Button -->
+      <a href="/" 
+         class="px-5 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200">
+        ← Back to Notes
+      </a>
+
+      <!-- Edit Button -->
+      <a href="/edit/<%= encodeURIComponent(title) %>" 
+         class="px-5 py-2 bg-yellow-500 hover:bg-yellow-600 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200">
+        ✏️ Edit Note
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
